@@ -15,7 +15,7 @@ open class BaseViewMVC <LISTENER_TYPE>(
 
     protected var listeners = HashSet<LISTENER_TYPE>()
 
-    protected var rootView: View = layoutInflater.inflate(layoutQuestionDetails, parent, false)
+    var rootView: View = layoutInflater.inflate(layoutQuestionDetails, parent, false)
 
     protected var context: Context = rootView.context
 
