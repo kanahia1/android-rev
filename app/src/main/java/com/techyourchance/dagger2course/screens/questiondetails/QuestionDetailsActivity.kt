@@ -20,11 +20,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 class QuestionDetailsActivity : AppCompatActivity(), QuestionDetailsMvc.Listener {
 
     private val coroutineScope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
-
     private lateinit var viewMvc: QuestionDetailsMvc
-
     private lateinit var stackoverflowApi: StackoverflowApi
-
     private lateinit var questionId: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
